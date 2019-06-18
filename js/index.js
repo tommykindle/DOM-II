@@ -2,7 +2,10 @@
 const nav = document.querySelector('header nav')
 nav.addEventListener('click', event =>{
   const heading = document.querySelector('.logo-heading')
-  heading.textContent = event.target.textContent
+  
+  if(event.target !== nav){
+    heading.textContent = event.target.textContent
+  }
 }); 
 
 const navColor = document.querySelector('header nav')
