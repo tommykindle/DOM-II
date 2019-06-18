@@ -20,3 +20,16 @@ const headingReset = document.querySelector('.logo-heading')
 headingReset.addEventListener('dblclick', event =>{
     headingReset.textContent = 'Fun Bus'
 }); 
+
+window.addEventListener('keydown', event =>{
+    if(event.keyCode === 87){
+        window.scrollBy(0, -400); 
+    } 
+}); 
+
+window.addEventListener('keydown', event =>{
+    if(event.keyCode === 83){
+        window.scrollBy(0, 400); 
+    }
+
+}); 
